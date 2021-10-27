@@ -1,0 +1,125 @@
+/* CSS Variables (Client Colors, etc) */
+:root{
+    --client-color1: #006b74;
+    --client-color2: #006b74;
+    --client-color3: #00b8cd;
+    --client-color4: #f1f8fb;
+    --client-color5: #ffa832;
+    --client-white: #f3f3f3;
+    --client-black: #363636;
+}
+
+/* Background Setter Classes */
+.bg-client-color1{
+    background-color: var(--client-color1) !important;
+    color: var(--client-white) !important;
+}
+.bg-client-color2{
+    background-color: var(--client-color2) !important;
+    color: var(--client-white) !important;
+}
+.bg-client-color3{
+    background-color: var(--client-color3) !important;
+    color: var(--client-white) !important;
+}
+.bg-client-color4{
+    background-color: var(--client-color4) !important;
+    color: var(--client-black) !important;
+}
+.bg-client-color5{
+    background-color: var(--client-color5) !important;
+    color: var(--client-black) !important;
+}
+.bg-client-white{
+    background-color: var(--client-white) !important;
+}
+.bg-client-black{
+    background-color: var(--client-black) !important;
+}
+
+/* Foreground/Color Setter Classes */
+.fg-client-color1{
+    color: var(--client-color1) !important;
+}
+.fg-client-color2{
+    color: var(--client-color2) !important;
+}
+.fg-client-color3{
+    color: var(--client-color3) !important;
+}
+.fg-client-color4{
+    color: var(--client-color4) !important;
+}
+.fg-client-color5{
+    color: var(--client-color5) !important;
+}
+.fg-client-white{
+    color: var(--client-white) !important;
+}
+.fg-client-black{
+    color: var(--client-black) !important;
+}
+
+/* Overrides side bar active color */
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: var(--client-white) !important;
+    color: var(--client-black) !important;
+}
+.sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active, .sidebar-light-primary .nav-treeview > .nav-item > .nav-link.active:hover{    
+    background-color: var(--client-color5) !important;
+    color: var(--client-white) !important;
+}
+
+/* Some Custom Buttons */
+.btn-client-nobg{
+    color: var(--client-white);
+}
+.btn-client-nobg:hover{
+    color: #fff; 
+}
+.btn-client-color3{
+    background-color: var(--client-color3);
+    color: var(--client-white);
+  
+}
+.btn-client-color3:hover{
+    background-color: var(--client-color1);
+    color: #fff; 
+}
+
+/* Fixes to Homepage Dash */
+.user-panel{
+    margin-top: -14px;
+}
+.dashboard-table{
+    height: 311px;
+    max-width: 100%;
+}
+.dashboard-chart{
+    min-height: 285px;
+    height: 285px;
+    max-height: 285px;
+    max-width: 100%;
+}
+/* Overrides Datatable.net Page Index Color */
+.page-item.active .page-link {
+    background-color: var(--client-color1) !important;
+    color: var(--client-white) !important;
+    border: 1px solid var(--client-color1);
+}
+.page-link {
+    color: var(--client-color1) !important;
+}
+/* Overrides Popup Model Close button */
+.modal-header .close, .modal-header .mailbox-attachment-close {
+    margin: -1rem auto -1rem -1rem;
+}
+
+/* Custom Fields Override */
+.custom-file-label::after {
+    left: 0;
+    right: auto;
+    border-left-width: 0;
+    border-right: inherit;
+    content: "اختار"
+}

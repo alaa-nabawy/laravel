@@ -1,0 +1,352 @@
+/* Adds Custom Arabic Font */
+@font-face {
+    font-family: 'Din Next LT W23 Regular';
+    src: url("../fonts/din-next-lt-w23-regular.ttf");
+}
+/* CSS Variables (Client Colors, etc) */
+:root{
+    --client-color1: #006b74;
+    --client-color2: #006b74;
+    --client-color3: #00b8cd;
+    --client-color4: #f1f8fb;
+    --client-color5: #ffa832;
+    --client-white: #f3f3f3;
+    --client-black: #363636;
+}
+/* Overrides Dashboard Font in the Entire Body */
+body{
+    font-family: 'Din Next LT W23 Regular', 'Arial';
+}
+/* Background Setter Classes */
+.bg-client-color1{
+    background-color: var(--client-color1) !important;
+    color: var(--client-white) !important;
+}
+.bg-client-color2{
+    background-color: var(--client-color2) !important;
+    color: var(--client-white) !important;
+}
+.bg-client-color3{
+    background-color: var(--client-color3) !important;
+    color: var(--client-white) !important;
+}
+.bg-client-color4{
+    background-color: var(--client-color4) !important;
+    color: var(--client-black) !important;
+}
+.bg-client-color5{
+    background-color: var(--client-color5) !important;
+    color: var(--client-black) !important;
+}
+.bg-client-white{
+    background-color: var(--client-white) !important;
+}
+.bg-client-black{
+    background-color: var(--client-black) !important;
+}
+
+/* Foreground/Color Setter Classes */
+.fg-client-color1{
+    color: var(--client-color1) !important;
+}
+.fg-client-color2{
+    color: var(--client-color2) !important;
+}
+.fg-client-color3{
+    color: var(--client-color3) !important;
+}
+.fg-client-color4{
+    color: var(--client-color4) !important;
+}
+.fg-client-color5{
+    color: var(--client-color5) !important;
+}
+.fg-client-white{
+    color: var(--client-white) !important;
+}
+.fg-client-black{
+    color: var(--client-black) !important;
+}
+
+/* Overrides side bar active color */
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: var(--client-white) !important;
+    color: var(--client-black) !important;
+}
+.sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active, .sidebar-light-primary .nav-treeview > .nav-item > .nav-link.active:hover{    
+    background-color: var(--client-color5) !important;
+    color: var(--client-white) !important;
+}
+
+/* Some Custom Buttons */
+.btn-client-nobg{
+    color: var(--client-white);
+}
+.btn-client-nobg:hover{
+    color: #fff; 
+}
+.btn-client-color3{
+    background-color: var(--client-color3) !important;
+    color: var(--client-white) !important;
+  
+}
+.btn-client-color3:hover{
+    background-color: var(--client-color1) !important;
+    color: #fff !important; 
+}
+
+/* Fixes to Homepage Dash */
+.user-panel{
+    margin-top: -14px;
+}
+.dashboard-table{
+    height: 311px;
+    max-width: 100%;
+}
+.dashboard-chart{
+    min-height: 285px;
+    height: 285px;
+    max-height: 285px;
+    max-width: 100%;
+}
+.select2 {
+    width:100% !important;
+}
+/* Overrides Datatable.net Page Index Color */
+.page-item.active .page-link {
+    background-color: var(--client-color1) !important;
+    color: var(--client-white) !important;
+    border: 1px solid var(--client-color1);
+}
+.page-link {
+    color: var(--client-color1) !important;
+}
+/* Overrides Datatable.net Excel Button Color */
+.buttons-excel {
+    font-weight: bold;
+    background-color: var(--client-color1);
+    color: var(--client-white);
+    border: none;
+    padding: 0.25rem 1rem;
+}
+.buttons-excel:hover {
+    transition: background-color 0.15s ease-in-out;
+    background-color: var(--client-black);
+}
+/* Overrides Popup Model Close button */
+.modal-header .close, .modal-header .mailbox-attachment-close {
+    margin: -1rem auto -1rem -1rem;
+}
+/* Custom Fields Override */
+.custom-file-label::after {
+    left: 0;
+    right: auto;
+    border-left-width: 0;
+    border-right: inherit;
+    content: "اختار"
+}
+/* Overrides Page Editor Settings */
+.note-editor{
+    direction: ltr;
+}
+/* Custom Current Entry Picture */
+.form-group-picture{
+    margin: 0;
+}
+.picture-container{
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin-right: -2.5px;
+    margin-left: -2.5px;
+    margin-bottom: 5px;
+}
+.entry-picture{
+    position: relative;
+    margin: 4px;
+}
+.entry-picture > .btn-exit{
+    right:0px;
+    position: absolute;
+    background-color: #dc354544;
+    padding: 4px 8px 1px 8px;
+    border: none;
+}
+.entry-picture > .btn-exit:hover{
+    background-color: #dc3545DD;
+}
+.entry-picture > img{
+    max-width: 110px;
+    max-height: 110px;
+    border: solid #495057 1px;
+    border-radius: 5px;
+}
+/* Form Tab Buttons */
+.card-tools > .nav-pills{
+    background-color: var(--client-white) !important;
+    border-radius: 5px;
+    padding: 0px;
+    border: var(--client-white) 1px solid;
+}
+/* Add Form Nav */
+.card-tools > .nav-pills .nav-link{
+    background-color: var(--client-white) !important;
+    color: var(--client-color3) !important;
+}
+.card-tools > .nav-pills .nav-link.active, .card-tools > .nav-pills .show > .nav-link {
+    background-color: var(--client-color3) !important;
+    color: var(--client-white) !important;
+}
+.nav-seperator{
+    margin: 5px 0px;
+    border-left: var(--client-color3) 1px solid;
+}
+/* Edit Form Nav */
+.card-tools > .nav-pills.bg-warning .nav-link{
+    background-color: var(--client-white) !important;
+    color: var(--client-black) !important;
+}
+.card-tools > .nav-pills.bg-warning .nav-link.active, .card-tools > .nav-pills.bg-warning .show > .nav-link {
+    background-color: #ffc107 !important;
+    color: var(--client-black) !important;
+}
+.card-tools > .nav-pills.bg-warning> .nav-seperator{
+    margin: 5px 0px;
+    border-left: #ffc107 1px solid;
+}
+/* Settings Form Nav */
+.card-tools > .nav-pills.settings .nav-link{
+    background-color: var(--client-white) !important;
+    color: var(--client-color1) !important;
+}
+.card-tools > .nav-pills.settings .nav-link.active, .card-tools > .nav-pills.settings .show > .nav-link {
+    background-color: var(--client-color1) !important;
+    color: var(--client-white) !important;
+}
+.card-tools > .nav-pills.settings> .nav-seperator{
+    margin: 5px 0px;
+    border-left: var(--client-color1) 1px solid;
+}
+/* New Form Footer */
+.form-footer{
+    background-color: rgba(0, 0, 0, 0.03);
+    margin: 0 -1.25rem -1.25rem -1.25rem;
+    padding: 1.25rem;
+}
+.footer-alerts{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 0 1.25rem;
+}
+.widget-overlay{
+    margin-top: -70px;
+}
+/* Alerts Styling */
+.alert > p{
+    margin: 0;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 64px;
+    height: 38px;
+    margin: 0 0 0 -20px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.labelactive input, .labelactive .slider {
+    background-color: var(--client-color3);
+}
+.labelactive input, .labelactive .slider {
+    box-shadow: 0 0 1px var(--client-color3);
+}
+.labelactive input, .labelactive .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 10px;
+}
+.slider.round:before {
+    border-radius: 10px;
+}
+.toggleheader{
+    min-width: 88px;
+}
+.custom-label{
+    margin-bottom: -8px;
+}
+.custom-search{
+    z-index: 3;
+    margin-bottom: -56px;
+}
+/* Overrides some styling */
+@media (max-width: 576px) {
+    .pagination {
+      padding: 0 0 0 0;
+    }
+    .card-tools > .nav-pills{
+        display: flex;
+        margin: 5px 0px 0px 0px !Important;
+    }
+    .custom-search{
+        margin-bottom: 0px;
+    }
+}
+
+#doctor-information .tagify{
+    color: #00B8CD;
+    background: #F1F8FB;
+    border: none;
+    padding: 9px 0px;
+    height: auto;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 5px !important;
+}
+#doctor-information .tagify__input::before{
+    color: #acb1b8;
+}
+#doctor-information input:focus, 
+#doctor-information textarea:focus, 
+#doctor-information .tagify--focus, 
+#doctor-information .dropdown-toggle:focus{
+    -webkit-box-shadow: 0 0 0 0.2rem #01B5B655;
+    box-shadow: 0 0 0 0.2rem #01B5B655;
+}
+
+#doctor-information .tagify{
+    max-width: none;
+}
